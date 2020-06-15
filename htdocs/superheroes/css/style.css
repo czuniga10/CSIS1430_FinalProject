@@ -1,0 +1,50 @@
+body {
+    opacity: .9;
+    font-style: oblique;
+}
+
+p {
+    font-family: cursive;
+    font-variant: small-caps;
+}
+
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.dc {
+    padding: 5px 2px 15px 2px;
+    margin: 0 10px 25px 10px;
+    border-radius: 8px;
+}
+
+.dc :hover {
+    color: darkgray;
+}
+
+.marvel {
+    border-radius: 8px;
+    margin: 0 10px 0 10px;
+    padding: 5px 2px 15px 2px;
+}
+
+.marvel :hover {
+    color: lightblue;
+}
+
+.thor {
+    font-size: 25px;
+    color: aqua;
+}
+
+.dc-inline {
+    font-weight: bold;
+    color: blue;
+}
+
+.marvel-inline {
+    font-weight: bold;
+    color: blue;
+}
