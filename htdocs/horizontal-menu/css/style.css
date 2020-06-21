@@ -25,7 +25,6 @@
 
 .menu li a:hover {
     font-weight: bold;
-    font-size: 19px;
     background-color: rgb(65, 65, 65);
     border-radius: 4px 4px 0 0;
     color: aqua;
