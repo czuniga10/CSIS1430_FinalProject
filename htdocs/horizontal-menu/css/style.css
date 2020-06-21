@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu {
+    background-color: aqua;
+    text-align: right;
+    margin-bottom: 12px;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a {
+    font-size: large;
+    display: inline-block;
+    padding: 20px;
+    font-family: 'Source Code Pro', Arial;
+    color: rgb(65, 65, 65);
+}
+
+.menu li a:hover {
+    font-weight: bold;
+    font-size: 19px;
+    background-color: rgb(65, 65, 65);
+    border-radius: 4px 4px 0 0;
+    color: aqua;
+}
+
+.menu li a:active {
+    background-color: white;
+    color: black;
+}
