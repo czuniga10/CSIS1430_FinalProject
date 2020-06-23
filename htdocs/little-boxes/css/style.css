@@ -1,0 +1,197 @@
+
+.field {
+    position: absolute;
+    top: -110px;
+    left: 145px;
+    height: 600px;
+    width: 600px;
+    border-radius: 1% 100% 1% 1%;
+    border: 1px solid green;
+    background-color: green;
+    transform: rotate(-45deg);
+  }
+
+.infield {
+    position: absolute;
+    top: 238px;
+    left: 10px;
+    height: 350px;
+    width: 350px;
+    border-radius: 1% 50% 1% 1%;
+    border: 1px solid #836539; /*#9b7653; */
+    background-color: #836539; /*#9b7653;*/
+}
+
+.infield-grass {
+    position: absolute;
+    top: 160px;
+    left: 28px;
+    height: 160px;
+    width: 160px;
+    border: 2px solid green;
+    background-color: green;
+}
+
+.base-lines{
+    position: absolute;
+    top: -90px;
+    left: 19px;
+    height: 670px;
+    width: 670px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.batting-area {
+    position: absolute;
+    top: 544px;
+    left: -14px;
+    height: 70px;
+    width: 70px;
+    border-radius: 100% 100% 100% 100%;
+    background-color: #836539;
+}
+
+.home-plate {
+    transform: rotate(-135deg);
+    background: white;
+    display: inline-block;
+    height: 8px;
+    left: 31px;
+    top: 27px;
+    position: relative;
+    width: 7px;
+    z-index: 3;
+}
+.home-plate:before {
+    border-bottom: 3.5px solid white;
+    border-left: 3.5px solid transparent;
+    border-right: 3.5px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: -3.5px;
+    width: 0;
+}
+
+.batters-box-right{
+    top: 35px;
+    left: 36px;
+    transform: rotate(-135deg);
+    box-shadow: 4px 0 #836539; /* Cover up the base line */
+    position:absolute;
+    height:18px;
+    width: 6px;
+    border:2px solid white;
+    background-color:#836539;
+    z-index: 2;
+}
+
+.batters-box-left{
+    top: 19px;
+    left: 20px;
+    transform: rotate(-135deg);
+    box-shadow: -6px 0 #836539; /* Cover up the base line */
+    position:absolute;
+    height:18.5px;
+    width: 6px;
+    border:2px solid white;
+    background-color:#836539;
+    z-index: 2;
+}
+
+.first-base-circle{
+    left:183px;
+    top:545px;
+    position:absolute;
+    height: 20px;
+    width: 20px;
+    border:1px solid #836539;
+    background-color:#836539;
+    /* border:1px solid red;
+    background-color:red; */
+    border-radius:100% 1% 1% 1%;
+}
+
+.second-base-circle{
+    left: 183px;
+    top: 397px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border:1px solid #836539;
+    background-color: #836539;
+    /* border:1px solid red;
+    background-color:red; */
+    border-radius: 1% 1% 1% 100%;
+}
+
+.third-base-circle{
+    left:36px;
+    top:396px;
+    position:absolute;
+    height:20px;
+    width: 20px;
+    border:1px solid #836539;
+    background-color:#836539;
+    /* border:1px solid red;
+    background-color:red; */
+    border-radius:1% 1% 100% 1%;
+}
+
+.first-base{
+    left:204px;
+    top:569px;
+    position:absolute;
+    height: 10px;
+    width: 10px;
+    border:1px solid white;
+    background-color:white;
+    /* border:1px solid red;
+    background-color:red; */
+    z-index: 1000;
+}
+
+.second-base{
+    left:203px;
+    top:386px;
+    position:absolute;
+    height: 10px;
+    width: 10px;
+    border:1px solid white;
+    background-color:white;
+    z-index: 1000;
+}
+
+.third-base{
+    left:19px;
+    top:385px;
+    position:absolute;
+    height: 10px;
+    width: 10px;
+    border:1px solid white;
+    background-color:white;
+    z-index: 1000;
+}
+
+.pitchers-mound{
+    position:absolute;
+    top:51px;
+    left:59px;
+    height:50px;
+    width:50px;
+    border-radius:100% 100% 100% 100%;
+    background-color:#836539;
+}
+
+.rubber {
+    transform: rotate(45deg);
+    position:absolute;
+    top:21px;
+    left:21px;
+    height:2px;
+    width:9px;
+    border:1px solid white;
+    background-color:white;
+}
