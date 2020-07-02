@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>ZuniPizza</title>
+        <link rel="stylesheet" href="css/order.css">
     </head>
     <body>
         <h1>Order a Pizza</h1>
@@ -11,81 +12,113 @@
             <li><a href="order.html">Order</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
-        <form action="http://www.stonecoldprofessor.com/1430/pizza-form/order-process.php" method="POST">
-            <input name="first" id="first" type="text">
-            <input name="last" id="last" type="text">
-            <input name="add1" id="add1" type="text">
-            <input name="add2" id="add2" type="text">
-            <input name="city" id="city" type="text">
-            <select name="state" id="state">
-                <option value="Alabama">AL</option>
-                <option value="Alaska">AK</option>
-                <option value="Arizona">AZ</option>
-                <option value="Arkansas">AR</option>
-                <option value="California">CA</option>
-                <option value="Colorado">CO</option>
-                <option value="Connecticut">CT</option>
-                <option value="Deleware">DE</option>
-                <option value="Florida">FL</option>
-                <option value="Georgia">GA</option>
-                <option value="Hawaii">HI</option>
-                <option value="Idaho">ID</option>
-                <option value="Illinois">IL</option>
-                <option value="Indiana">IN</option>
-                <option value="Iowa">IA</option>
-                <option value="Kansas">KS</option>
-                <option value="Kentucky">KY</option>
-                <option value="Louisiana">LA</option>
-                <option value="Maine">ME</option>
-                <option value="Maryland">MD</option>
-                <option value="Massachusetts">MA</option>
-                <option value="Michigan">MI</option>
-                <option value="Minnesota">MN</option>
-                <option value="Mississippi">MS</option>
-                <option value="Missouri">MO</option>
-                <option value="Montana">MT</option>
-                <option value="Nebraska">NE</option>
-                <option value="Nevada">NV</option>
-                <option value="New Hampshire">NH</option>
-                <option value="New Jersey">NJ</option>
-                <option value="New Mexico">NM</option>
-                <option value="New York">NY</option>
-                <option value="North Carolina">NC</option>
-                <option value="North Dakota">ND</option>
-                <option value="Ohio">OH</option>
-                <option value="Oklahoma">OK</option>
-                <option value="Oregon">OR</option>
-                <option value="Pennsylvania">PA</option>
-                <option value="Rhode Island">RI</option>
-                <option value="South Carolina">SC</option>
-                <option value="South Dakota">SD</option>
-                <option value="Tennessee">TN</option>
-                <option value="Texas">TX</option>
-                <option value="Utah">UT</option>
-                <option value="Vermont">VT</option>
-                <option value="Virginia">VA</option>
-                <option value="Washington">WA</option>
-                <option value="West Virginia">WV</option>
-                <option value="Wisconsin">WI</option>
-                <option value="Wyoming">WY</option>
-            </select>
-            <input name="zip" id="id" type="text">
-            <input name="phone" id="phone" type="text">
-            <input name="email" id="email" type="text">
-            <textarea name="comments" id="" cols="30" rows="10"></textarea>
-            <select name="crust" id="crust">
-                <option value="thin">Thin</option>
-                <option value="thick">Thick</option>
-                <option value="pan">Pan</option>
-                <option value="gluten-free">Gluten-Free</option>
-            </select>
-            <input name="size" id="size" type="radio" value="10">
-            <input name="size" id="size" type="radio" value="13">
-            <input name="size" id="size" type="radio" value="16">
-            <input name="size" id="size" type="radio" value="20">
-            <input type="checkbox" name="toppings[]" id="Pepperoni" value="Pepperoni">
-            <input type="checkbox" name="toppings[]" id="Sausage" value="Sausage">
-            <input type="checkbox" name="toppings[]" id="Mushrooms" value="Mushrooms">
-        </form>
+        <div class="form-wrapper"></div>
+            <form action="http://www.stonecoldprofessor.com/1430/pizza-form/order-process.php" method="POST">
+                <div class="order-contact">
+                    <h4>Who's Za is this?</h4>
+                    <input name="first" id="first" type="text" placeholder="First Name" required>
+                    <input name="last" id="last" type="text" placeholder="Last Name" required>
+
+                    <h4>Where's it goin:</h4>
+                    <input name="add1" id="add1" type="text" placeholder="Street Address" required>
+                    <input name="add2" id="add2" type="text" placeholder="P.O. BOX">
+                    <input name="city" id="city" type="text" placeholder="City" required>
+                    <select name="state" id="state" required>
+                        <option value="" disabled selected>State</option>
+                        <option value="Alabama">AL</option>
+                        <option value="Alaska">AK</option>
+                        <option value="Arizona">AZ</option>
+                        <option value="Arkansas">AR</option>
+                        <option value="California">CA</option>
+                        <option value="Colorado">CO</option>
+                        <option value="Connecticut">CT</option>
+                        <option value="Deleware">DE</option>
+                        <option value="Florida">FL</option>
+                        <option value="Georgia">GA</option>
+                        <option value="Hawaii">HI</option>
+                        <option value="Idaho">ID</option>
+                        <option value="Illinois">IL</option>
+                        <option value="Indiana">IN</option>
+                        <option value="Iowa">IA</option>
+                        <option value="Kansas">KS</option>
+                        <option value="Kentucky">KY</option>
+                        <option value="Louisiana">LA</option>
+                        <option value="Maine">ME</option>
+                        <option value="Maryland">MD</option>
+                        <option value="Massachusetts">MA</option>
+                        <option value="Michigan">MI</option>
+                        <option value="Minnesota">MN</option>
+                        <option value="Mississippi">MS</option>
+                        <option value="Missouri">MO</option>
+                        <option value="Montana">MT</option>
+                        <option value="Nebraska">NE</option>
+                        <option value="Nevada">NV</option>
+                        <option value="New Hampshire">NH</option>
+                        <option value="New Jersey">NJ</option>
+                        <option value="New Mexico">NM</option>
+                        <option value="New York">NY</option>
+                        <option value="North Carolina">NC</option>
+                        <option value="North Dakota">ND</option>
+                        <option value="Ohio">OH</option>
+                        <option value="Oklahoma">OK</option>
+                        <option value="Oregon">OR</option>
+                        <option value="Pennsylvania">PA</option>
+                        <option value="Rhode Island">RI</option>
+                        <option value="South Carolina">SC</option>
+                        <option value="South Dakota">SD</option>
+                        <option value="Tennessee">TN</option>
+                        <option value="Texas">TX</option>
+                        <option value="Utah">UT</option>
+                        <option value="Vermont">VT</option>
+                        <option value="Virginia">VA</option>
+                        <option value="Washington">WA</option>
+                        <option value="West Virginia">WV</option>
+                        <option value="Wisconsin">WI</option>
+                        <option value="Wyoming">WY</option>
+                    </select>
+                    <input name="zip" id="id" type="text" placeholder="Zip Code" required>
+                    <input name="phone" id="phone" type="text" placeholder="Phone Number" required>
+                    <input name="email" id="email" type="text" placeholder="email" required>
+                </div>
+
+                <div class="customization">
+                    <h4>Customize Your Za!</h4>
+                    <label for="crust">Type of Crust:</label>
+                    <select name="crust" id="crust">
+                        <option value="" disabled selected>Select your option:</option>
+                        <option value="thin">Thin</option>
+                        <option value="thick">Thick</option>
+                        <option value="pan">Pan</option>
+                        <option value="gluten-free">Gluten-Free</option>
+                    </select>
+
+                    <label for="size">Pizza Size:</label>
+                    <label for="10">10 inch</label>
+                    <input name="size" id="10" type="radio" value="10 inch">
+
+                    <label for="14">14 inch</label>
+                    <input name="size" id="14" type="radio" value="14 inch">
+
+                    <label for="16">16 inch</label>
+                    <input name="size" id="16" type="radio" value="16 inch">
+
+                    <label for="24">24 inch</label>
+                    <input name="size" id="24" type="radio" value="24 inch">
+
+                    <h4>Whacha want on it?</h4>
+                    <label for="Pepperoni">Pepperoni</label>
+                    <input type="checkbox" name="toppings[]" id="Pepperoni" value="Pepperoni">
+
+                    <label for="Sausage">Sausage</label>
+                    <input type="checkbox" name="toppings[]" id="Sausage" value="Sausage">
+
+                    <label for="Mushrooms">Mushrooms</label>
+                    <input type="checkbox" name="toppings[]" id="Mushrooms" value="Mushrooms">
+
+                    <textarea name="comments" id="" cols="30" rows="10" placeholder="Any Comments for the Chef?"></textarea>
+                </div>
+                <input type="submit">
+            </form>
+        </div>
     </body>
 </html>
