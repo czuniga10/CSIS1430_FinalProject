@@ -2,26 +2,27 @@
 <html lang="en">
     <head>
         <title>ZuniPizza</title>
-        <link rel="stylesheet" href="css/order.css">
+        <link rel="stylesheet" type="text/css" href="css/order.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <h1>Order a Pizza</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="order.html">Order</a></li>
-            <li><a href="about.html">About</a></li>
+        <ul class="menu">
+            <li class="home"><a href="index.html">home</a></li>
+            <li class="contact"><a href="contact.html">contact</a></li>
+            <li class="order"><a href="order.html">order</a></li>
+            <li class="about"><a href="about.html">about</a></li>
         </ul>
-        <div class="form-wrapper"></div>
+        <div class="form-wrapper">
+            <h1 style="padding-left: 20%; padding-bottom: 25px;">Ready to Order?</h1>
             <form action="http://www.stonecoldprofessor.com/1430/pizza-form/order-process.php" method="POST">
                 <div class="order-contact">
-                    <h4>Who's Za is this?</h4>
-                    <input name="first" id="first" type="text" placeholder="First Name" required>
-                    <input name="last" id="last" type="text" placeholder="Last Name" required>
+                    <h2 style="padding-bottom: 25px;">Whose Pizza is it?</h2>
+                    <input class="extra-input-padding" style="margin-bottom: 20px;" name="first" id="first" type="text" placeholder="First Name" required><br>
+                    <input class="extra-input-padding" style="margin-bottom: 30px;" name="last" id="last" type="text" placeholder="Last Name" required>
 
-                    <h4>Where's it goin:</h4>
-                    <input name="add1" id="add1" type="text" placeholder="Street Address" required>
-                    <input name="add2" id="add2" type="text" placeholder="P.O. BOX">
+                    <h2 style="padding-bottom: 25px;">Where's it goin'?</h2>
+                    <input class="extra-input-padding" name="add1" id="add1" type="text" placeholder="Street Address" required>
+                    <input class="extra-input-padding" style="margin-bottom: 25px;" name="add2" id="add2" type="text" placeholder="P.O. BOX"><br>
                     <input name="city" id="city" type="text" placeholder="City" required>
                     <select name="state" id="state" required>
                         <option value="" disabled selected>State</option>
@@ -76,48 +77,143 @@
                         <option value="Wisconsin">WI</option>
                         <option value="Wyoming">WY</option>
                     </select>
-                    <input name="zip" id="id" type="text" placeholder="Zip Code" required>
-                    <input name="phone" id="phone" type="text" placeholder="Phone Number" required>
-                    <input name="email" id="email" type="text" placeholder="email" required>
+                    <input style="margin-bottom: 45px;" name="zip" id="id" type="text" placeholder="Zip Code" required><br>
+
+                    <h2 style="padding-bottom: 25px;">How we gettin' a hold of ya?</h2>
+                    <input style="margin-bottom: 25px;" name="phone" id="phone" type="text" placeholder="Phone #" required><br>
+                    <input name="email" id="email" type="text" placeholder="Email" required>
                 </div>
 
                 <div class="customization">
-                    <h4>Customize Your Za!</h4>
-                    <label for="crust">Type of Crust:</label>
-                    <select name="crust" id="crust">
-                        <option value="" disabled selected>Select your option:</option>
-                        <option value="thin">Thin</option>
-                        <option value="thick">Thick</option>
-                        <option value="pan">Pan</option>
-                        <option value="gluten-free">Gluten-Free</option>
-                    </select>
+                    <h1 style="padding-left: 20%; padding-bottom: 25px;">Customize Your Pizza!</h1>
+                    <div class="crust">
+                        <label for="crust" style="font-size: 1.5em; color: #FF3B3F;">Type of Crust:</label><br><br>
+                        <select style="margin-bottom: 30px; padding: 5px 5px 5px 5px;" name="crust" id="crust">
+                            <option value="" disabled selected>Select your option:</option>
+                            <option value="thin">Thin</option>
+                            <option value="thick">Thick</option>
+                            <option value="pan">Pan</option>
+                            <option value="gluten-free">Gluten-Free</option>
+                        </select><br>
+                        <label for="size" style="font-size: 1.5em; color: #FF3B3F;">Pizza Size:</label><br><br>
+                        <div class="size-grid">
+                            <label for="10">10 inch</label>
+                            <input style="margin-top: 7px;" name="size" id="10" type="radio" value="10 inch">
+                            <span class="size-ten"></span>
 
-                    <label for="size">Pizza Size:</label>
-                    <label for="10">10 inch</label>
-                    <input name="size" id="10" type="radio" value="10 inch">
+                            <label for="14">14 inch</label>
+                            <input style="margin-top: 7px;" name="size" id="14" type="radio" value="14 inch">
+                            <span class="size-fourteen"></span>
 
-                    <label for="14">14 inch</label>
-                    <input name="size" id="14" type="radio" value="14 inch">
+                            <label for="16">16 inch</label>
+                            <input style="margin-top: 7px;" name="size" id="16" type="radio" value="16 inch">
+                            <span class="size-sixteen"></span>
 
-                    <label for="16">16 inch</label>
-                    <input name="size" id="16" type="radio" value="16 inch">
+                            <label for="24">24 inch</label>
+                            <input style="margin-top: 7px;" name="size" id="24" type="radio" value="24 inch">
+                            <span class="size-twentyfour"></span>
+                        </div>
+                    </div>
+                    <div class="toppings-grid">
+                        <h2>Choose your Sauce</h1>
+                        <div class="sauces">
+                            <label for="Classic Red">Classic Red</label>
+                            <input style="margin-top: 7px;" type="checkbox" name="toppings[]" id="Classic Red" value="Classic Red">
 
-                    <label for="24">24 inch</label>
-                    <input name="size" id="24" type="radio" value="24 inch">
+                            <label for="Spicy Red">Spicy Red</label>
+                            <input style="margin-top: 7px;" type="checkbox" name="toppings[]" id="Spicy Red" value="Spicy Red">
 
-                    <h4>Whacha want on it?</h4>
-                    <label for="Pepperoni">Pepperoni</label>
-                    <input type="checkbox" name="toppings[]" id="Pepperoni" value="Pepperoni">
+                            <label for="White Garlic">White Garlic Alfredo</label>
+                            <input style="margin-top: 7px;" type="checkbox" name="toppings[]" id="White Garlic" value="White Garlic">
 
-                    <label for="Sausage">Sausage</label>
-                    <input type="checkbox" name="toppings[]" id="Sausage" value="Sausage">
+                            <label for="Pesto">Basil Pesto</label>
+                            <input style="margin-top: 7px;" type="checkbox" name="toppings[]" id="Pesto" value="Pesto">
+                        </div>
 
-                    <label for="Mushrooms">Mushrooms</label>
-                    <input type="checkbox" name="toppings[]" id="Mushrooms" value="Mushrooms">
+                        <h2>Choose your Cheese</h1>
+                        <div class="cheeses">
+                            <label for="Mozzarella">Mozzarella</label>
+                            <input style="margin-top: 7px;" type="checkbox" name="toppings[]" id="Mozzarella" value="Mozzarella">
 
-                    <textarea name="comments" id="" cols="30" rows="10" placeholder="Any Comments for the Chef?"></textarea>
+                            <label for="Provolone">Provolone</label>
+                            <input style="margin-top: 7px;" type="checkbox" name="toppings[]" id="Provolone" value="Provolone">
+
+                            <label for="Cheddar">Cheddar</label>
+                            <input style="margin-top: 7px;" type="checkbox" name="toppings[]" id="Cheddar" value="Cheddar">
+
+                            <label for="Parmesan">Parmesan</label>
+                            <input style="margin-top: 7px;" type="checkbox" name="toppings[]" id="Parmesan" value="Parmesan">
+
+                            <label for="Gouda">Gouda</label>
+                            <input style="margin-top: 7px;" type="checkbox" name="toppings[]" id="Gouda" value="Gouda">
+
+                            <label for="Ricotta">Ricotta</label>
+                            <input style="margin-top: 7px;" type="checkbox" name="toppings[]" id="Ricotta" value="Ricotta">
+                        </div>
+
+                        <h2>Choose your Meats</h1>
+                        <div class="meats">
+                            <label for="Pepperoni" style="margin-top: 10px;">Pepperoni</label>
+                            <input style="margin-top: 17px;" type="checkbox" name="toppings[]" id="Pepperoni" value="Pepperoni">
+                            <div class="pep-img"></div>
+
+                            <label for="Sausage" style="margin-top: 10px;">Sausage</label>
+                            <input style="margin-top: 17px;" type="checkbox" name="toppings[]" id="Sausage" value="Sausage">
+                            <div class="sausage-img"></div>
+
+                            <label for="Bacon" style="margin-top: 10px;">Bacon</label>
+                            <input style="margin-top: 17px;" type="checkbox" name="toppings[]" id="Bacon" value="Bacon">
+                            <div class="bacon-img"></div>
+
+                            <label for="Ham" style="margin-top: 10px;">Ham</label>
+                            <input style="margin-top: 17px;" type="checkbox" name="toppings[]" id="Ham" value="Ham">
+                            <div class="ham-img"></div>
+
+                            <label for="Chicken" style="margin-top: 10px;">Chicken</label>
+                            <input style="margin-top: 17px;" type="checkbox" name="toppings[]" id="Chicken" value="Chicken">
+                            <div class="chicken-img"></div>
+                        </div> 
+
+                        <h2 class="rest">What else?</h1>
+                        <div class="veggies">
+                            <label for="Pineapple">Pineapple</label>
+                            <input type="checkbox" name="toppings[]" id="Pineapple" value="Pineapple">
+
+                            <label for="Red Onions">Red Onions</label>
+                            <input type="checkbox" name="toppings[]" id="Red Onions" value="Red Onions">
+
+                            <label for="Mushrooms">Mushrooms</label>
+                            <input type="checkbox" name="toppings[]" id="Mushrooms" value="Mushrooms">
+
+                            <label for="Bell Peppers">Bell Peppers</label>
+                            <input type="checkbox" name="toppings[]" id="Bell Peppers" value="Bell Peppers">
+
+                            <label for="Olives">Olives</label>
+                            <input type="checkbox" name="toppings[]" id="Olives" value="Olives">
+
+                            <label for="Tomato">Tomato</label>
+                            <input type="checkbox" name="toppings[]" id="Tomato" value="Tomato">
+
+                            <label for="Spinach">Spinach</label>
+                            <input type="checkbox" name="toppings[]" id="Spinach" value="Spinach">
+
+                            <label for="Artichokes">Artichokes</label>
+                            <input type="checkbox" name="toppings[]" id="Artichokes" value="Artichokes">
+
+                            <label for="Sea Salt">Sea Salt</label>
+                            <input type="checkbox" name="toppings[]" id="Sea Salt" value="Sea Salt">
+
+                            <label for="Red Pepper Flakes">Red Pepper Flakes</label>
+                            <input type="checkbox" name="toppings[]" id="Red Pepper Flakes" value="Red Pepper Flakes">
+
+                            <label for="Oregano">Oregano</label>
+                            <input type="checkbox" name="toppings[]" id="Oregano" value="Oregano">
+                        </div>
+                        <textarea name="comments" id="" cols="30" rows="10" placeholder="Any Comments or Special Orders for the Chef?"></textarea>
+                    </div>
+                    <input type="submit">
+                    <input type="reset">
                 </div>
-                <input type="submit">
             </form>
         </div>
     </body>

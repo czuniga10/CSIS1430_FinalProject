@@ -1,7 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap');
+
+body {
+    font-family: Noto Sans TC, arial;
+}
+
+h2 {
+    color: #FF3B3F;
+    padding-bottom: 25px;
+}
+
+.order {
+    font-weight: bold;
+    background-color: #FF3B3F;
+    border-radius: 4px 4px 0 0;
+}
+
 .form-wrapper{
     width: 100%;
 }
 
 .order-contact {
+    width: 62%;
+    height: 80vh;
     margin: auto;
+    background-color: #CAEBF2;
+    border-radius: 8px;
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.747);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+input {
+    padding: 5px 0 5px 5px;
+}
+
+.extra-input-padding {
+    padding-right: 80px;
+}
+
+.crust {
+    width: 62%;
+    height: 80vh;
+    margin: auto;
+    background-color: #CAEBF2;
+    border-radius: 8px;
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.747);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.size-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    width: 50%;
+    margin: auto;
+}
+
+.size-ten {
+    margin: auto;
+    height: 35px;
+    width: 35px;
+    background-color: #FF3B3F;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+    border: 3px solid white;
+}
+
+.size-fourteen {
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    background-color: #FF3B3F;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+    border: 3px solid white;
+}
+
+.size-sixteen {
+    margin: auto;
+    height: 65px;
+    width: 65px;
+    background-color: #FF3B3F;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+    border: 3px solid white;
+}
+
+.size-twentyfour {
+    margin: auto;
+    height: 90px;
+    width: 90px;
+    background-color: #FF3B3F;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+    border: 3px solid white;
+}
+
+.toppings-grid {
+    width: 62%;
+    height: 200vh;
+    margin: auto;
+    background-color: #CAEBF2;
+    border-radius: 8px;
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.747);
+    text-align: center;
+    margin-bottom: 60px;
+}
+.sauces {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 29%;
+    margin: auto;
+    margin-bottom: 38px;
+}
+
+.cheeses {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 29%;
+    margin: auto;
+    margin-bottom: 38px;
+}
+
+.meats {
+    display: grid;
+    grid-template-columns: 150px 30px 115px;
+    grid-template-rows: 85px 85px 85px 85px 85px 15px;
+    width: 42%;
+    margin: auto;
+    margin-bottom: 38px;
+}
+
+.pep-img {
+    background-image: url(../img/pepperoni.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 17px;
+}
+
+.sausage-img {
+    background-image: url(../img/sausage.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 17px;
+}
+
+.bacon-img {
+    background-image: url(../img/bacon.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 17px;
+}
+
+.ham-img {
+    background-image: url(../img/ham.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 17px;
+}
+
+.chicken-img {
+    background-image: url(../img/chicken.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 17px;
 }
