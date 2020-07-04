@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap');
+
+.about {
+    font-weight: bold;
+    background-color: #FF3B3F;
+    border-radius: 4px 4px 0 0;
+}
+
+.main-wrapper {
+    width: 62%;
+    height: 80vh;
+    margin: auto;
+    background-color: #CAEBF2;
+    border-radius: 8px;
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.4);
+    display: grid;
+    border: 1px solid rgba(0, 0, 0, 0.747);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.top-left-img {
+    background-image: url(../img/about1.png);
+    background-size: 100%;
+    border-radius: 8px 0 0 0;
+}
+
+.mid-right-img {
+    background-image: url(../img/about2.jpg);
+    background-size: 100%;
+}
+
+.bot-left-img {
+    background-image: url(../img/about3.jpg);
+    background-size: 100%;
+    border-radius: 0 0 0 8px;
+}
+
+.main-par {
+    margin: auto;
+    color: #FF3B3F;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-family: Noto Sans TC, arial;
+    line-height: 2;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.main-par:hover {
+    font-size: 14.2px;
+    text-shadow: 1px 1px rgb(167, 167, 167);
+}

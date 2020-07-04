@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap');
+
+.home {
+    font-weight: bold;
+    background-color: #FF3B3F;
+    border-radius: 4px 4px 0 0;
+}
+
+.hero-wrapper {
+    height: 50vh;
+    background-image: url(../img/home-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -32px;
+}
+
+.hero-wording-wrapper {
+    width: 50%;
+    padding-left: 49%;
+}
+
+.company-name {
+    padding-top: 20px;
+    color: white;
+    font-size: 75px;
+    font-family: Noto Sans TC, arial;
+    letter-spacing: 8px;
+}
+
+.dots {
+    padding-top: 20px;
+    margin-top: -30px;
+    color: #FF3B3F;
+    font-size: 80px;
+    margin-left: 220px;
+}
+
+.slogan {
+    color: white;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-left: 110px;
+    font-family: Noto Sans TC, arial;
+}
+
+.arrows {
+    color: #fa5356;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 40vh;
+}
+
+.home-left {
+    margin: auto;
+    align-items: center;
+    font-size: 20px;
+    font-family: Noto Sans TC, arial;
+}
+
+.home-left li:hover {
+    color: #fa5356;
+    font-weight: bold;
+}
+
+.home-mid {
+    background-image: url(../img/home-bot.jpg);
+    background-size: 100%;
+    margin: 15px 15px 15px 0;
+}
+
+.home-right {
+    margin: auto;
+    font-family: Noto Sans TC, arial;
+}
+
+.home-right:hover {
+    color: #fa5356;
+    font-weight: bold;
+}
+
+footer {
+    background-color: white;
+    text-align: right;
+}

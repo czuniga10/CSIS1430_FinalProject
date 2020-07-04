@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap');
+
+.contact {
+    font-weight: bold;
+    background-color: #FF3B3F;
+    border-radius: 4px 4px 0 0;
+}
+
+label {
+    font-family: Noto Sans TC, arial;
+}
+
+.main-wrapper {
+    width: 62%;
+    height: 80vh;
+    margin: auto;
+    background-color: #CAEBF2;
+    border-radius: 8px;
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.747);
+    text-align: center;
+}
+
+.contact-title {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: Noto Sans TC, arial;
+}
+
+.contact-par {
+    padding-top: 30px;
+    font-family: Noto Sans TC, arial;
+    margin: 15px;
+    color: #ff1115;
+}
