@@ -37,3 +37,18 @@ input {
     margin: 15px;
     color: #ff1115;
 }
+
+.contact-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+}
+
+.contact-img img {
+    object-fit: cover;
+    object-position: 60% 0;
+    padding-right: 17px;
+    width: 290px;
+    height: 367px;
+    padding-top: 7%;
+}
