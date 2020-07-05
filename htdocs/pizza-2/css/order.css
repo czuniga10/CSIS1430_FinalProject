@@ -105,7 +105,7 @@ input {
 
 .toppings-grid {
     width: 62%;
-    height: 300vh;
+    height: 350vh;
     margin: auto;
     background-color: #CAEBF2;
     border-radius: 8px;
@@ -178,8 +178,8 @@ input {
 
 .veggies {
     display: grid;
-    grid-template-columns: 150px 30px;
-    grid-template-rows: auto;
+    grid-template-columns: 150px 30px auto;
+    grid-template-rows: 85px 85px 85px 85px 85px 85px 85px 85px 85px 85px 85px;
     width: 42%;
     margin: auto;
     margin-bottom: 38px;
@@ -193,4 +193,81 @@ input {
     margin: auto;
     width: 80%;
     color: rgba(0, 0, 0, 0.356);
+}
+
+.pineapple-img {
+    background-image: url(../img/pineapple.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.onion-img {
+    background-image: url(../img/onion.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.mushroom-img {
+    background-image: url(../img/mushrooms.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.pepper-img {
+    background-image: url(../img/pepper.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.olive-img {
+    background-image: url(../img/olives.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.tomato-img {
+    background-image: url(../img/tomato.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.spinach-img {
+    background-image: url(../img/spinach.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.artichoke-img {
+    background-image: url(../img/artichoke.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.salt-img {
+    background-image: url(../img/seasalt.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.redpep-img {
+    background-image: url(../img/redpepper.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.oregano-img {
+    background-image: url(../img/oregano.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
 }

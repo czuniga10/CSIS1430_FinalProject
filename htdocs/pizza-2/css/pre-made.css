@@ -12,8 +12,36 @@
 
 .pre-made {
     display: grid;
-    grid-template-columns: auto 85px 65px auto auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto 85px 65px 20px 150px;
+    grid-template-rows: 85px 85px 85px 85px;
     width: 74%;
     margin: auto;
+}
+
+.meat-lovers-img {
+    background-image: url(../img/meatlovers.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.white-img {
+    background-image: url(../img/whitechicken.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.supreme-img {
+    background-image: url(../img/supreme.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.veggie-img {
+    background-image: url(../img/veggie.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
 }
