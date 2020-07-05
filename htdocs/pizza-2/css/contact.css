@@ -10,6 +10,10 @@ label {
     font-family: Noto Sans TC, arial;
 }
 
+input {
+    padding: 5px 5px 5px 5px;
+}
+
 .main-wrapper {
     width: 62%;
     height: 80vh;

@@ -105,7 +105,7 @@ input {
 
 .toppings-grid {
     width: 62%;
-    height: 200vh;
+    height: 300vh;
     margin: auto;
     background-color: #CAEBF2;
     border-radius: 8px;
@@ -174,4 +174,23 @@ input {
     background-size: 100%;
     background-repeat: no-repeat;
     margin-bottom: 17px;
+}
+
+.veggies {
+    display: grid;
+    grid-template-columns: 150px 30px;
+    grid-template-rows: auto;
+    width: 42%;
+    margin: auto;
+    margin-bottom: 38px;
+}
+
+.btn {
+    padding: 7px 7px 7px 7px;
+}
+
+.disclosure {
+    margin: auto;
+    width: 80%;
+    color: rgba(0, 0, 0, 0.356);
 }
