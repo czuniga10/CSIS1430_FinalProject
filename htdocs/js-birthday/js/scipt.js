@@ -16,6 +16,8 @@ var getAge = () => {
         var age = prompt("Enter your age:");
         if(isNaN(age)) {
             alert("Age must be a number.");
+        } else if (age > 150 || age <= 0) {
+            alert("Age must be within 1 - 150");
         } else {
             valid = !valid;
             return age;
