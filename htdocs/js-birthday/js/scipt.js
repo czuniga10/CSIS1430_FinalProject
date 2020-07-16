@@ -13,16 +13,16 @@ var getAge = () => {
     var valid = false;
     var age = 0;
     while(!valid) {
-        var age = prompt("Enter your age:");
+        age = prompt("Enter your age:");
         if(isNaN(age)) {
             alert("Age must be a number.");
         } else if (age > 150 || age <= 0) {
             alert("Age must be within 1 - 150");
         } else {
             valid = !valid;
-            return age;
         }
     }
+    return age;
 }
 
 var getSeason = () => {
@@ -34,20 +34,20 @@ var getSeason = () => {
 
         if(month == "march" || month == "april" || month == "may") {
             valid = !valid;
-            season = "the spring";
+            season = "spring";
         } else if (month == "june" || month == "july" || month == "august") {
             valid = !valid;
-            season = "the summer";
+            season = "summer";
         } else if (month == "september" || month == "october" || month == "november") {
             valid = !valid;
-            season = "the fall";
+            season = "fall";
         } else if (month == "december" || month == "january" || month == "february") {
             valid = !valid;
-            season = "the winter";
+            season = "winter";
         } else {
             alert("Not a valid month. Try again.")
         }
     };
 
-    return season;
+    return "the " + season;
 }
