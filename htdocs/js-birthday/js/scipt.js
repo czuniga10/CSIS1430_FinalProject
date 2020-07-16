@@ -1,6 +1,6 @@
 var myFunc = () => {
     var name = prompt("Enter your name:");
-    var age = prompt("Enter your age:");
+    var age = getAge();
     var season = getSeason();
 
     alert("Welcome to the Matrix " + name + "! You are " + age + " years old, and you were born in " 
@@ -9,11 +9,27 @@ var myFunc = () => {
     document.getElementById("wake-up").innerHTML = "Wake up, " + name + "...";
 }
 
+var getAge = () => {
+    var valid = false;
+    var age = 0;
+    while(!valid) {
+        var age = prompt("Enter your age:");
+        if(isNaN(age)) {
+            alert("Age must be a number.");
+        } else {
+            valid = !valid;
+            return age;
+        }
+    }
+}
+
 var getSeason = () => {
+    var month;
     var valid = false;
     var season = "";
     while(!valid) {
-        var month = prompt("Enter your birth month:").toLowerCase();
+        month = prompt("Enter your birth month:").toLowerCase();
+
         if(month == "march" || month == "april" || month == "may") {
             valid = !valid;
             season = "the spring";
