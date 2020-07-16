@@ -1,0 +1,23 @@
+body {
+    padding-top: 30px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+}
+
+#blinking-cursor {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 14px;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from,to {
+        color: white;
+    }
+    50% {
+        color: black;
+    }
+}
