@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    padding: 5px;
+    background-color: rgb(98, 98, 255);
+}
+
+span {
+    color: red;
+}
+
+button a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.welcome {
+    padding-left: 40px;
+    padding-bottom: 45px;
+    padding-top: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 44px;
+}
+
+.main-wrapper {
+    background-image: url(https://www.equinoxpub.com/blog/wp-content/uploads/2014/03/MadLibsIT.jpg);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.9;
+}
+
+.item {
+    width: 145px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(137, 255, 182);
+    border: 2px solid black;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.help {
+    width: 270px;
+}
+
+.item a {
+    text-decoration: none;
+    color: black;
+}
+
+.item:hover {
+    background: rgb(0, 255, 234);
+    color: black;
+}
+
+.list-wrapper {
+    padding-left: 40px;
+}
+
+.baseball-wrapper {
+    background-image: url(https://www.mtg.com/wp-content/uploads/2018/07/Major-League-Baseball-1280x720.jpg);
+    width: 100vw;
+    height:100vh;
+    opacity: 0.9;
+}
+
+.zoo-wrapper {
+    background-image: url(https://s3.amazonaws.com/tinycards/image/5a8017ba48ef1afc24aff6b4c289417d);
+    width: 100vw;
+    height:100vh;
+    opacity: 0.9;
+}
+
+p {
+    width: 60%;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 1.2em;
+    font-family: monospace;
+    background-color: black;
+    opacity: .8;
+    padding: 20px;
+}
+
+.main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 60%;
+    margin: auto;
+    opacity: .95;
+    background-color: black;
+    height: 94.5vh;
+}
