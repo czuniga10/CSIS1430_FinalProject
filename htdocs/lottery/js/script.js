@@ -14,8 +14,8 @@ let askForNum = () => {
         let x = prompt("How many Lotto numbers would you like?");
         if(isNaN(x)) {
             alert("Must be a number");
-        } else if (x <= 0 || x > 100) {
-            alert("Must be between 1 and 100");
+        } else if (x <= 0 || x > 20) {
+            alert("Must be between 1 and 20");
         } else {
             check = !check;
         }
