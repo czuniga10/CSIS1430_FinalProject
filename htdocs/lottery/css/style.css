@@ -1,0 +1,40 @@
+body {
+    background-image: url(https://st3.depositphotos.com/3645435/12570/v/450/depositphotos_125707362-stock-illustration-lottery-realistic-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-wrapper {
+    display: flexbox;
+    width: 50%;
+    height: 500px;
+    text-align: center;
+    background-color: white;
+    opacity: .85;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 50px;
+    font-family: monospace;
+}
+
+#lottoNums {
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 60px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.run {
+    background-color: aquamarine;
+}
+
+.pick {
+    color: white;
+    background-color: blueviolet;
+}

@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Lottery</title>
-    <script src="js/script.js"></script>
-</head>
-<body onload="lottery()">
-    <span id="lottoNums"></span>
-</body>
+    <head>
+        <title>Lottery</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body onload="lottery()">
+        <div class="main-wrapper">
+            <h1 class="title">Your lucky numbers are...</h1>
+            <span id="lottoNums"></span><br>
+            <button class="run" onclick="rerun()">Re-roll?</button>
+            <button class="pick" onclick="lottery()">Re-pick?</button>
+        </div>
+    </body>
 </html>
