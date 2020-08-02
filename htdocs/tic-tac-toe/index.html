@@ -8,23 +8,11 @@
     <body onload="getNames()">
         <h2 id="title">Tic Tac Toe</h2>
         <div class="wrapper">
-            <div class="game-board">
-                <div class="row-top">
-                    <div onclick="pick(this);"></div>
-                    <div onclick="pick(this);"></div>
-                    <div onclick="pick(this);"></div>
-                </div>
-                <div class="row-mid">
-                    <div onclick="pick(this);"></div>
-                    <div onclick="pick(this);"></div>
-                    <div onclick="pick(this);"></div>
-                </div>
-                <div class="row-bot">
-                    <div onclick="pick(this);"></div>
-                    <div onclick="pick(this);"></div>
-                    <div onclick="pick(this);"></div>
-                </div>
+            <div id="game-board">
             </div>
         </div>
+        <button id="play-again" onclick="setUpGame()">Play Again?</button>
+        <button id="switch-users" onclick="switchStarter()">Switch Who Goes First?</button>
+        <div id="scoreboard"></div>
     </body>
 </html>

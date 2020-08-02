@@ -15,7 +15,7 @@
     text-align: center;
 }
 
-.game-board {
+#game-board {
     margin-top: 20px;
 }
 
@@ -34,11 +34,11 @@ div[class^="row-"] div {
     color: orangered;
 }
 
-div.row-top div {
+div.row-1 div {
     border-top: none;
 }
 
-div.row-bot div {
+div.row-3 div {
     border-bottom: none;
 }
 
