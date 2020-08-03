@@ -4,6 +4,11 @@
     user-select: none;
 }
 
+body {
+    background-image: url(https://i.pinimg.com/originals/7a/76/33/7a7633c0022200e493f01922afa9f27e.jpg);
+    background-repeat: none;
+}
+
 .wrapper {
     display: flex;
     justify-content: space-around;
@@ -13,39 +18,121 @@
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    color: white;
 }
 
 #game-board {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
-div[class^="row-"] {
+div[id^="row-"] {
     clear: both;
 }
 
-div[class^="row-"] div {
-    border: 5px solid rgb(36, 182, 226);
+div[id^="row-"] div {
+    border: 5px solid #66FCF1;
     height: 150px;
     width: 150px;
     float: left;
     text-align: center;
     font-family: Arial;
     font-size: 145px;
-    color: orangered;
+    color: white;
 }
 
-div.row-1 div {
+div[id^="row-"] div:hover {
+    background-color: rgba(128, 128, 128, 0.219);
+}
+
+div#row-1 div {
     border-top: none;
 }
 
-div.row-3 div {
+div#row-3 div {
     border-bottom: none;
 }
 
-div[class^="row-"] div:first-child {
+div[id^="row-"] div:first-child {
     border-left: none;
 }
 
-div[class^="row-"] div:last-child {
+div[id^="row-"] div:last-child {
     border-right: none;
+}
+
+#scoreboard-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-family: arial;
+    display: none;
+}
+
+.sb-title {
+    border-bottom: 3px solid #000000;
+    background-color: #dadada;
+    color: #000000;
+    padding: 10px;
+}
+
+h1 {
+    color: #45A29E;
+}
+
+.sb-player {
+    font-size: 23px;
+    padding-top: 10px;
+    font-family: arial;
+    padding-bottom: 5px;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+.sb-player:nth-child(1) {
+    color: #44a09a;
+}
+
+.sb-player:nth-child(2) {
+    color: #123f3d;
+}
+
+.sb-player:nth-child(3) {
+    color: #be0000;
+}
+
+#scoreboard {
+    padding-bottom: 15px;
+    background-color: rgb(232, 255, 252);
+}
+
+.play-again-wrapper {
+    position: absolute;
+    top: 500px;
+    opacity: 8;
+}
+
+#play-again, #switch-users {
+    font-size: 20px;
+    font-family: Arial;
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid #66FCF1;
+    display: none;
+}
+
+#play-again:hover, #switch-users:hover {
+    background-color: rgb(224, 224, 224);
+    color: black;
+}
+
+#top-win {
+    position: absolute;
+    left: 30%;
+    top: 100px;
+    width: 300px;
+    height: 30px;
+    color: blue;
 }

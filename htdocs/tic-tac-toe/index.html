@@ -6,13 +6,20 @@
         <script src="js/script.js"></script>
     </head>
     <body onload="getNames()">
-        <h2 id="title">Tic Tac Toe</h2>
-        <div class="wrapper">
-            <div id="game-board">
+        <div id="game">
+            <h2 id="title">Tic Tac Toe</h2>
+            <div class="wrapper">
+                <div id="game-board">
+                </div>
+            </div>
+            <div id="scoreboard-wrapper">
+                <h1 class="sb-title">Scoreboard</h1>
+                <div id="scoreboard"></div>
             </div>
         </div>
-        <button id="play-again" onclick="setUpGame()">Play Again?</button>
-        <button id="switch-users" onclick="switchStarter()">Switch Who Goes First?</button>
-        <div id="scoreboard"></div>
+        <div class="play-again-wrapper">
+            <button id="play-again" onclick="setUpGame()">Play Again?</button>
+            <button id="switch-users" onclick="switchStarter()">Switch Who Goes First?</button>
+        </div>
     </body>
 </html>
